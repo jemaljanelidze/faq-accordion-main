@@ -62,6 +62,15 @@ body {
   align-items: center;
 }
 
+/* Reset button styles */
+.accordion-item-title {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 1.25rem 0;
+}
+
 .accordion-item-title:hover {
   color: hsl(281, 83%, 54%);
 }
