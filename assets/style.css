@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-image: url('images/background-pattern-desktop.svg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: hsl(275, 100%, 97%);
+}
+
+.container {
+  max-width: 37.5rem;
+  width: 85vw;
+  margin: 9.375rem auto;
+  padding: 1.5rem;
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(292, 42%, 14%);
+  line-height: 1.1;
+}
+
+.header-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-item {
+  border-bottom: 1px solid hsl(275, 100%, 97%);
+}
+
+.accordion-item-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: hsl(292, 42%, 14%);
+  line-height: 1.2;
+  padding: 1.25rem 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-item-title:hover {
+  color: hsl(281, 83%, 54%);
+}
+
+.accordion-icon {
+  width: 1.875rem;
+  height: 1.875rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion-icon.rotated {
+  transform: rotate(180deg);
+}
+
+.accordion-item-content {
+  font-weight: 400;
+  color: hsl(292, 16%, 49%);
+  line-height: 1.5;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.accordion-item-content.expanded {
+  max-height: 12.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: hsl(292, 16%, 49%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile styles */
+@media (max-width: 375px) {
+  body {
+    background-image: url('images/background-pattern-mobile.svg');
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1440px) {
+  .container {
+    padding: 2.5rem;
+  }
+
+  .header {
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .header-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .header h1 {
+    font-size: 3.5rem;
+  }
+}
