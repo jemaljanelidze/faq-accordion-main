@@ -11,7 +11,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 # Links
 
 - Solution URL: [Click here]
-- Live Site URL: [Click here] (https://jemaljanelidze.github.io/faq-accordion-main/)
+- Live Site URL: [Click here](https://jemaljanelidze.github.io/faq-accordion-main/)
 
 # Built with
 
